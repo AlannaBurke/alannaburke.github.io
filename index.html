@@ -47,6 +47,8 @@
   <script type="text/template">
     ## Getting Started with Git
 
+    Git Documentation: http://git-scm.com/doc
+
      * Git Code School - learn git in your browser! [try.github.io](https://try.github.io/levels/1/challenges/1).
      * Downloads [http://git-scm.com/downloads](http://git-scm.com/downloads)
      * Mac [http://git-scm.com/download/mac](http://git-scm.com/download/mac)
@@ -66,16 +68,18 @@
   </script>
 </section>
 <section data-markdown>
-    <script type="text/template">
-        ## GitHub client
+  <script type="text/template">
+    ## GUI Clients
 
-        [Mac - https://mac.github.com/](https://mac.github.com/)
+    **GitHub client**
 
-        [PC - https://windows.github.com/](https://windows.github.com/)
+    Mac: https://mac.github.com/
 
-        ## SourceTree (my favorite)
+    PC: https://windows.github.com/
 
-        [http://www.sourcetreeapp.com/](http://www.sourcetreeapp.com/)
+    **SourceTree** (my favorite)
+
+    http://www.sourcetreeapp.com/
 
     </script>
 </section>
@@ -83,9 +87,11 @@
   <script type="text/template">
     Clone an _existing_ git repository.
 
-    `git clone https://github.com/agis-/git-style-guide.git`
+    ```
+    git clone https://github.com/agis-/git-style-guide.git
+    ```
 
-    ![git clone](img/2015-04-28_1342.png)
+    http://git-scm.com/docs/git-clone
 
   </script>
 </section>
@@ -95,16 +101,154 @@
 
     Do this when you want to start developing and you do not yet have a remote repository.
 
-    `git init`
+    ```
+    git init
+    ```
 
-    ![git clone](img/2015-04-28_1359.png)
+    ![git init](img/2015-04-28_1359.png)
+
+    http://git-scm.com/docs/git-init
 
     Let's walk through making & cloning a new repo on http://github.com.
 
 
   </script>
 </section>
+<section data-markdown>
+  <script type="text/template">
+    Branching is one of the most important parts of source control with git.
 
+    Creating a branch allows you to work on the code in your repository in a
+    silo, separate from any other code changes.
+
+    ```
+    git branch [filename or directory]
+    git checkout -b branchname
+    ```
+
+    http://git-scm.com/docs/git-branch
+
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    The main branch of your repo is called _master_.
+
+    **General Git workflow**
+
+     * master
+     * develop
+     * feature branches
+     * release branches
+     * hotfixes
+
+
+    http://nvie.com/posts/a-successful-git-branching-model/
+
+    https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    Stage files or directories to be committed.
+    ```
+    git add [filename or directory]
+
+    git add .
+
+    git add --all
+
+    ```
+    http://git-scm.com/docs/git-add
+
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    Show the _status_ of your current working directory.
+
+    ```
+    git status
+    ```
+
+    ![git status](img/2015-04-28_1521.png)
+
+    http://git-scm.com/docs/git-status
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    _Commit_ staged changes to your branch.
+
+    ```
+    git commit -m "I've made these changes"
+    ```
+
+    **Commit early and often. Small, self-contained commits are easier to
+    understand and revert when something goes wrong.**
+
+    http://git-scm.com/docs/git-commit
+
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    _Reset_ staged changes.
+
+    Unstage your changes:
+
+    ```
+    git reset
+    ```
+
+    Discard all staged changes:
+
+    ```
+    git reset --hard
+    ```
+
+   http://git-scm.com/docs/git-reset
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    _Push_ code to your remote repo.
+
+
+   http://git-scm.com/docs/git-push
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    _Pull_ one remote branch into a local branch.
+
+    http://git-scm.com/docs/git-pull
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    Fetch changes from your remote repository.
+
+    This will tell your local repo about new branches and any other changes.
+
+    ```
+    git fetch
+    ```
+    ![git fetch](img/2015-04-28_1554.png)
+
+    http://git-scm.com/docs/git-fetch
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    _Merge_ one branch into another.
+
+
+   http://git-scm.com/docs/git-merge
+  </script>
+</section>
 
 
 			</div>
