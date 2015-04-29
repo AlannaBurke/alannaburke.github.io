@@ -85,18 +85,18 @@
 </section>
 <section data-markdown>
   <script type="text/template">
+    ##git clone
     Clone an _existing_ git repository.
-
     ```
     git clone https://github.com/agis-/git-style-guide.git
     ```
-
     http://git-scm.com/docs/git-clone
 
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
+  ##git init
     Create a new git repository.
 
     Do this when you want to start developing and you do not yet have a remote repository.
@@ -104,6 +104,11 @@
     ```
     git init
     ```
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+  ##git init
 
     ![git init](img/2015-04-28_1359.png)
 
@@ -111,11 +116,11 @@
 
     Let's walk through making & cloning a new repo on http://github.com.
 
-
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
+    ##git branch
     Branching is one of the most important parts of source control with git.
 
     Creating a branch allows you to work on the code in your repository in a
@@ -131,9 +136,8 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    _Checking out_ a branch allows you to switch to a different branch, or you
-    can combine the _branch_ and _checkout_ commands to make a new branch and
-    switch to it.
+  ##git checkout
+    _Checking out_ a branch allows you to switch to a different branch, or you can combine the _branch_ and _checkout_ commands to make a new branch and switch to it.
 
     ```
     git checkout branchname
@@ -143,9 +147,13 @@
     git checkout -b branchname
 
     ```
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+  ##git checkout
 
-    Here I checkout the master branch of my project, and then create and
-    checkout a feature branch.
+    Here I checkout the master branch of my project, and then create and checkout a feature branch.
 
    ![git checkout](img/2015-04-28_1608.png)
 
@@ -176,19 +184,32 @@
 </section>
 <section data-markdown>
   <script type="text/template">
+    ##git add
     Stage files or directories to be committed.
     ```
     git add [filename or directory]
     ```
 
+    Stage all modified & added files:
     ```
     git add .
     ```
 
+    Stage all modified, added, & deleted files:
     ```
     git add --all
 
     ```
+
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    ##git add
+
+
+    ![git add](img/2015-04-28_1838.png)
+
 
     http://git-scm.com/docs/git-add
 
@@ -196,6 +217,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
+  ##git status
     Show the _status_ of your current working directory.
 
     ```
@@ -209,14 +231,15 @@
 </section>
 <section data-markdown>
   <script type="text/template">
+  ##git commit
     _Commit_ staged changes to your branch.
 
     ```
     git commit -m "I've made these changes"
     ```
+    Commit early and often. Small, self-contained commits are easier to understand and revert when something goes wrong.
 
-    **Commit early and often. Small, self-contained commits are easier to
-    understand and revert when something goes wrong.**
+    ![git commit](img/2015-04-28_1839.png)
 
     http://git-scm.com/docs/git-commit
 
@@ -224,6 +247,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
+  ##git reset
     _Reset_ staged changes.
 
     Unstage your changes:
@@ -243,24 +267,44 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    _Push_ code to your remote repo.
+  ##git push
+   _Push_ code to your remote repo.
 
+   ```
+   git push
+   ```
+
+   `-u` tells the repo to track the "upstream" or remote branch
+
+   ```
+   git push -u origin branchname
+   ```
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+  ##git push
+
+  ![git push](img/2015-04-28_1839-1.png)
 
    http://git-scm.com/docs/git-push
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
-    _Pull_ one remote branch into a local branch.
+  ##git pull
+  _Pull_ one remote branch into a local branch.
+
+  ![git fetch](img/2015-04-28_1554.png)
+
 
     http://git-scm.com/docs/git-pull
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
-    Fetch changes from your remote repository.
-
-    This will tell your local repo about new branches and any other changes.
+  ##git fetch
+    Fetch changes from your remote repository. This will tell your local repo about new branches and any other changes.
 
     ```
     git fetch
@@ -272,6 +316,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
+  ##git merge
     _Merge_ one branch into another.
 
 
