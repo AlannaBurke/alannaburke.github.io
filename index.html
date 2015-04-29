@@ -123,8 +123,32 @@
 
     ```
     git branch [filename or directory]
-    git checkout -b branchname
     ```
+
+    http://git-scm.com/docs/git-branch
+
+  </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    _Checking out_ a branch allows you to switch to a different branch, or you
+    can combine the _branch_ and _checkout_ commands to make a new branch and
+    switch to it.
+
+    ```
+    git checkout branchname
+    ```
+
+    ```
+    git checkout -b branchname
+
+    ```
+
+    Here I checkout the master branch of my project, and then create and
+    checkout a feature branch.
+
+   ![git checkout](img/2015-04-28_1608.png)
+
 
     http://git-scm.com/docs/git-branch
 
@@ -155,12 +179,17 @@
     Stage files or directories to be committed.
     ```
     git add [filename or directory]
+    ```
 
+    ```
     git add .
+    ```
 
+    ```
     git add --all
 
     ```
+
     http://git-scm.com/docs/git-add
 
   </script>
