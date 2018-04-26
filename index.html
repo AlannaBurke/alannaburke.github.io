@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Intro to Git/Github - Alanna Burke</title>
+		<title>Git 101 - Intro to Git - Alanna Burke</title>
 
 		<meta name="description" content="Your description">
 		<meta name="author" content="Your Name">
@@ -38,20 +38,38 @@
 			<div class="slides">
 
 <section>
-    <h2>Intro to Git/Github</h2>
+    <h2>Git 101 - Intro to Git</h2>
     <h3>Alanna Burke</h3>
-    <h3>March 15, 2016</h3>
+    <h3>April 27, 2018</h3>
+    <h3>Drupaldelphia</h3>
 </section>
+
 <section>
-    <h2>Your Teaching Assistants Tonight</h2>
-    <h3>Tim</h3>
-    <h3>Adam</h3>
-    <h3>Scott</h3>
-    <h3>Sarav</h3>
-    <h3>Amber</h3>
-
-
+    <h2>About Me</h2>
+    <h3>Chromatic - chromatichq.com</h3>
+    <h3>Twitter, Drupal.org - aburke626</h3>
+    <h3>Slack, Github - alannaburke</h3>
 </section>
+
+<section data-markdown>
+  <script type="text/template">
+  ## What is Version Control?
+  * A system to record changes to your files over time.
+  * Can be centralized (SVN) or distributed (git, mercurial).
+  </script>
+</section>
+
+<section data-markdown>
+  <script type="text/template">
+  ## Why Git?
+  * Distributed Version Control - download a full copy of the entire project.
+  * Everyone can work on the same project at the same time.
+  * Branching is easy!
+  * Easy to merge in changes.
+  * Performance - Git is fast.
+  </script>
+</section>
+
 <section data-markdown>
   <script type="text/template">
     ## Getting Started with Git
@@ -128,15 +146,13 @@
   <script type="text/template">
     ## GUI Clients
 
-    **Gitk**
-
-    Should come with git - if not, re-install the latest version and check `/usr/local/bin/`
-
     **GitHub client**
 
-    Mac: https://mac.github.com/
+    https://desktop.github.com/
 
-    PC: https://windows.github.com/
+    **Tower**
+
+    https://www.git-tower.com
 
     **SourceTree** (my favorite)
 
@@ -171,11 +187,15 @@
   <script type="text/template">
   ##git init
 
-    ![git init](img/2015-04-28_1359.png)
+    ```
+    sites>mkdir test
+    sites/test>cd test
+    sites/test>git init
+    Initialized empty Git repository in sites/test/.git/
+    sites/test>
+    ```
 
     http://git-scm.com/docs/git-init
-
-    Let's walk through making & cloning a new repo on http://github.com.
 
   </script>
 </section>
@@ -189,7 +209,7 @@
     ```
     Add a remote:
     ```
-    git remote add origin https://github.com/yourusername/yourrepo.git
+    git remote add origin https://github.com/AlannaBurke/test.git
     ```
 
     </script>
@@ -198,8 +218,15 @@
   <script type="text/template">
     ## git remote
 
-    ![git remote](img/2015-04-29_0015.png)
+    ```
+    sites/test>git remote add origin https://github.com/AlannaBurke/test.git
+    sites/test>git remote -v
+    origin https://github.com/AlannaBurke/test.git (fetch)
+    origin https://github.com/AlannaBurke/test.git (push)
+    sites/test>
 
+    ```
+    If you need to do some complex stuff, you can different remotes for fetching and pushing. We won't get into that.
      http://git-scm.com/docs/git-remote
 
     </script>
@@ -241,8 +268,14 @@
 
     Here I checkout the master branch of my project, and then create and checkout a feature branch.
 
-   ![git checkout](img/2015-04-28_1608.png)
-
+  ```
+  sites/test>git checkout master
+  Switched to branch 'master'
+  Your branch is up-to-date with 'origin/master'
+  sites/test>git checkout -b new-branch
+  Switched to a new branch 'new-branch'
+  sites/test>
+  ```
 
     http://git-scm.com/docs/git-branch
 
@@ -286,46 +319,56 @@
     git add --all
 
     ```
-
-  </script>
-</section>
-<section data-markdown>
-  <script type="text/template">
-    ##git add
-
-
-    ![git add](img/2015-04-28_1838.png)
-
-
     http://git-scm.com/docs/git-add
 
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git status
+    ##git status
     Show the _status_ of your current working directory.
 
-    ```
-    git status
-    ```
+  ```
+sites/test>git add sites
+sites/test>git status
+On branch new-branch
+Changes to be committed:
+    (use "git reset HEAD <file>..." to unstage)
 
-    ![git status](img/2015-04-28_1521.png)
+      modified:  sites/all/modules/custom/my_reports.info
 
+Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git checkout -- <file>..." to discard changes in the working directory)
+
+      modified:  composer.lock
+sites/test>
+  ```
     http://git-scm.com/docs/git-status
+
+
   </script>
 </section>
+
 <section data-markdown>
   <script type="text/template">
   ##git commit
     _Commit_ staged changes to your branch.
+    `-m` : Adds a message to your commit.
 
     ```
     git commit -m "I've made these changes"
     ```
-    Commit early and often. Small, self-contained commits are easier to understand and revert when something goes wrong.
+    Commit early and often.
 
-    ![git commit](img/2015-04-28_1839.png)
+    Small, self-contained commits are easier to understand and revert when something goes wrong.
+
+    ```
+  sites/test>git commit -m "Adding Report View."
+  [new-branch 25f2421] Adding Report View.
+  2 files changes, 134 insertions(+), 1 deletion(-)
+  sites/test>
+    ```
 
     http://git-scm.com/docs/git-commit
 
@@ -371,7 +414,18 @@
   <script type="text/template">
   ##git push
 
-  ![git push](img/2015-04-28_1839-1.png)
+  ```
+sites/test>git push -u origin new-branch
+Counting objects: 10, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.63KiB | 0 bytes/s, done.
+Total 10 (delta 8), reused 0 (delta 0)
+To https://github.com/AlannaBurke/test.git
+* [new branch] new-branch -> new-branch
+Branch new-branch set up to track remote branch new-branch from origin.
+sites/test>
+  ```
 
    http://git-scm.com/docs/git-push
   </script>
@@ -381,7 +435,8 @@
   ##git pull
   _Pull_ one remote branch into a local branch.
 
-  ![git fetch](img/2015-04-28_1554.png)
+  Pull often to reduce merge conflicts, so that you always have a copy of the latest code.
+
 
 
     http://git-scm.com/docs/git-pull
@@ -390,13 +445,19 @@
 <section data-markdown>
   <script type="text/template">
   ##git fetch
-    Fetch changes from your remote repository. This will tell your local repo about new branches and any other changes.
+    Fetch changes from your remote repository.
+    This will tell your local repo about new branches and any other changes.
 
     ```
-    git fetch
+sites/test>git fetch
+remote: Counting objects: 78, done.
+remote: Compressing objects: 100% (52/52), done.
+remote: Total 78 (delta 42), reused 32 (delta 26), pack-reused 0
+Unpacking objects: 100% (78/78), done.
+From https://github.com/AlannaBurke
+4a1ef4f..4dabf6e  my-newer-branch -> origin/my-newer-branch
+sites/test>
     ```
-    ![git fetch](img/2015-04-28_1554.png)
-
     http://git-scm.com/docs/git-fetch
   </script>
 </section>
@@ -407,9 +468,33 @@
     ```
     git merge branchname
     ```
+
     In everyday development, you're not going to use this much.
-    `git pull` actually uses `merge`, and when you want to merge a branch into master, for example, it's very likely you'll be doing this through the Github interface via a pull request.
+
+    `git pull` uses  `merge`,  and when you want to merge a branch into master, for example, it's very likely you'll be doing this through the Github interface via a pull request.
    http://git-scm.com/docs/git-merge
+  </script>
+</section>
+
+<section data-markdown>
+  <script type="text/template">
+  ##Fixing Common Mistakes
+
+  </script>
+</section>
+
+<section data-markdown>
+  <script type="text/template">
+  ##git amend
+    _Amend_ or _edit_ your previous commit.
+    ```
+    git commit --amend
+    ```
+    If you've changed something but want to add it to your previous commit, add the file and then do:
+    ```
+    git commit --amend -m "This is my updated commit message."
+    ```
+    This only works if you haven't pushed yet! Otherwise it's a new commit.
   </script>
 </section>
 
