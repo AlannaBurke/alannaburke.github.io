@@ -37,23 +37,30 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-<section>
-    <h2>Git 101 - Intro to Git</h2>
-    <h3>Alanna Burke</h3>
-    <h3>April 27, 2018</h3>
-    <h3>Drupaldelphia</h3>
+
+<section data-markdown>
+  <script type="text/template">
+    #Git 101 - Intro to Git</h2>
+    #Alanna Burke</h3>
+    ##April 27, 2018</h3>
+    ##Drupaldelphia</h3>
+  </script>
 </section>
 
-<section>
-    <h2>About Me</h2>
-    <h3>Chromatic - chromatichq.com</h3>
-    <h3>Twitter, Drupal.org - aburke626</h3>
-    <h3>Slack, Github - alannaburke</h3>
+
+<section data-markdown>
+  <script type="text/template">
+    #About Me</h2>
+    ##Chromatic - chromatichq.com</h3>
+    ![Chromatic](img/chromaticlogo.png)
+    ##Twitter, Drupal.org - aburke626</h3>
+    ##Slack, Github - alannaburke</h3>
+  </script>
 </section>
 
 <section data-markdown>
   <script type="text/template">
-  ## What is Version Control?
+  # What is Version Control?
   * A system to record changes to your files over time.
   * Can be centralized (SVN) or distributed (git, mercurial).
   </script>
@@ -61,7 +68,7 @@
 
 <section data-markdown>
   <script type="text/template">
-  ## Why Git?
+  # Why Git?
   * Distributed Version Control - download a full copy of the entire project.
   * Everyone can work on the same project at the same time.
   * Branching is easy!
@@ -72,7 +79,7 @@
 
 <section data-markdown>
   <script type="text/template">
-    ## Getting Started with Git
+    # Getting Started with Git
 
     Git Documentation: http://git-scm.com/doc
 
@@ -86,7 +93,7 @@
 <section data-markdown>
     <script type="text/template">
 
-  ## The Command Line (CLI)
+  # The Command Line (CLI)
   * Powerful tool for interacting with computers - and fast!
   * Let's go over some basic commands.
     </script>
@@ -94,7 +101,7 @@
 </section>
 <section data-markdown>
     <script type="text/template">
-  ## Some Basic Commands
+  # Some Basic Commands
 
   ```
   cd
@@ -119,21 +126,20 @@
   ```
   touch [filename]
   ```
-   create an empty filename
+   create an empty file
 
   ```
   mkdir [directoryname]
   ```
-    make an empty folder
+    create an empty folder
 
 
     </script>
-
 </section>
 
 <section data-markdown>
   <script type="text/template">
-    ## GUI Clients
+    # GUI Clients
 
     Git is best on the command line, but a GUI client can be useful.
 
@@ -144,7 +150,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    ## GUI Clients
+    # GUI Clients
 
     **GitHub client**
 
@@ -160,9 +166,32 @@
 
     </script>
 </section>
+
 <section data-markdown>
   <script type="text/template">
-    ##git clone
+  #Setting Up Git
+  ```
+git config --global user.name "Alanna Burke"
+git config --global user.email alanna@chromatichq.com
+```
+
+    </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+  #Setting Up Git
+  Git will use your default editor, such as Vim.
+  If you want to use a different editor like emacs, do the following:
+  ```
+git config --global core.editor emacs
+```
+This is a little more complicated on Windows:
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+    </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+    #git clone
     Clone an _existing_ git repository.
     ```
     git clone https://github.com/agis-/git-style-guide.git
@@ -173,26 +202,26 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git init
+  #git init
     Create a new git repository.
 
     Do this when you want to start developing and you do not yet have a remote repository.
 
     ```
-    git init
+git init
     ```
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git init
+  #git init
 
     ```
-    sites>mkdir test
-    sites/test>cd test
-    sites/test>git init
-    Initialized empty Git repository in sites/test/.git/
-    sites/test>
+sites>mkdir test
+sites/test>cd test
+sites/test>git init
+Initialized empty Git repository in sites/test/.git/
+sites/test>
     ```
 
     http://git-scm.com/docs/git-init
@@ -201,7 +230,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    ## git remote
+    # git remote
 
     List your remotes:
     ```
@@ -216,14 +245,14 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    ## git remote
+    # git remote
 
     ```
-    sites/test>git remote add origin https://github.com/AlannaBurke/test.git
-    sites/test>git remote -v
-    origin https://github.com/AlannaBurke/test.git (fetch)
-    origin https://github.com/AlannaBurke/test.git (push)
-    sites/test>
+sites/test>git remote add origin https://github.com/AlannaBurke/test.git
+sites/test>git remote -v
+origin https://github.com/AlannaBurke/test.git (fetch)
+origin https://github.com/AlannaBurke/test.git (push)
+sites/test>
 
     ```
     If you need to do some complex stuff, you can different remotes for fetching and pushing. We won't get into that.
@@ -233,7 +262,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    ##git branch
+    #git branch
     Branching is one of the most important parts of source control with git.
 
     Creating a branch allows you to work on the code in your repository in a
@@ -249,32 +278,30 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git checkout
+  #git checkout
     _Checking out_ a branch allows you to switch to a different branch, or you can combine the _branch_ and _checkout_ commands to make a new branch and switch to it.
 
     ```
-    git checkout branchname
+git checkout branchname
     ```
 
     ```
-    git checkout -b branchname
+git checkout -b branchname
 
     ```
   </script>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git checkout
-
-    Here I checkout the master branch of my project, and then create and checkout a feature branch.
+  #git checkout
 
   ```
   sites/test>git checkout master
-  Switched to branch 'master'
-  Your branch is up-to-date with 'origin/master'
-  sites/test>git checkout -b new-branch
-  Switched to a new branch 'new-branch'
-  sites/test>
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'
+sites/test>git checkout -b new-branch
+Switched to a new branch 'new-branch'
+sites/test>
   ```
 
     http://git-scm.com/docs/git-branch
@@ -303,7 +330,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    ##git add
+    #git add
     Stage files or directories to be committed.
     ```
     git add [filename or directory]
@@ -325,7 +352,7 @@
 </section>
 <section data-markdown>
   <script type="text/template">
-    ##git status
+    #git status
     Show the _status_ of your current working directory.
 
   ```
@@ -352,12 +379,12 @@ sites/test>
 
 <section data-markdown>
   <script type="text/template">
-  ##git commit
+  #git commit
     _Commit_ staged changes to your branch.
     `-m` : Adds a message to your commit.
 
     ```
-    git commit -m "I've made these changes"
+git commit -m "Added header to report view."
     ```
     Commit early and often.
 
@@ -374,21 +401,54 @@ sites/test>
 
   </script>
 </section>
+
+
 <section data-markdown>
   <script type="text/template">
-  ##git reset
+  #Commit Messages
+Anatomy of a great commit message:
+
+* A one line summary. It should be capitalized and succinct (50 chars or less).
+* Followed by a longer description, if necessary.
+* First two items should be separated by an empty line.
+* Lines should be wrapped at approximately 72 characters.
+* Reference an issue in your commits whenever possible.
+
+    </script>
+</section>
+
+  <section data-markdown>
+  <script type="text/template">
+      #Commit Messages
+
+```
+Fix for editor dashboard showing incorrect date.
+
+* Fixed date calculation logic.
+* Added function docblock to comply with coding standards.
+* Refactored foreach loop, improving clarity.
+
+Closes gh-80.
+```
+https://chromatichq.com/blog/how-write-great-commit-message
+
+    </script>
+</section>
+<section data-markdown>
+  <script type="text/template">
+  #git reset
     _Reset_ staged changes.
 
     Unstage your changes:
 
     ```
-    git reset
+git reset
     ```
 
     Discard all staged changes:
 
     ```
-    git reset --hard
+git reset --hard
     ```
 
    http://git-scm.com/docs/git-reset
@@ -396,7 +456,7 @@ sites/test>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git push
+  #git push
    _Push_ code to your remote repo.
 
    ```
@@ -412,7 +472,7 @@ sites/test>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git push
+  #git push
 
   ```
 sites/test>git push -u origin new-branch
@@ -432,7 +492,7 @@ sites/test>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git pull
+  #git pull
   _Pull_ one remote branch into a local branch.
 
   Pull often to reduce merge conflicts, so that you always have a copy of the latest code.
@@ -444,7 +504,7 @@ sites/test>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git fetch
+  #git fetch
     Fetch changes from your remote repository.
     This will tell your local repo about new branches and any other changes.
 
@@ -463,10 +523,10 @@ sites/test>
 </section>
 <section data-markdown>
   <script type="text/template">
-  ##git merge
+  #git merge
     _Merge_ one branch into another.
     ```
-    git merge branchname
+git merge branchname
     ```
 
     In everyday development, you're not going to use this much.
@@ -478,27 +538,39 @@ sites/test>
 
 <section data-markdown>
   <script type="text/template">
-  ##Fixing Common Mistakes
+  #Fixing Common Mistakes
 
   </script>
 </section>
 
 <section data-markdown>
   <script type="text/template">
-  ##git amend
+  #git amend
     _Amend_ or _edit_ your previous commit.
     ```
-    git commit --amend
+git commit --amend
     ```
     If you've changed something but want to add it to your previous commit, add the file and then do:
     ```
-    git commit --amend -m "This is my updated commit message."
+git commit --amend -m "This is my updated commit message."
     ```
     This only works if you haven't pushed yet! Otherwise it's a new commit.
   </script>
 </section>
+<section data-markdown>
+  <script type="text/template">
+  #rename a branch
+  ```
+git branch -m <new-branch-name>
+```
+  </script>
+</section>
 
-
+<section data-markdown>
+  <script type="text/template">
+ LIVE DEMO LIVING ON THE EDGE
+  </script>
+</section>
 			</div>
 
 		</div>
