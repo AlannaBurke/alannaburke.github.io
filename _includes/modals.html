@@ -26,17 +26,22 @@
               </li>
               {% endif %}
               {% if post.project-date %}
-              <li>Date:
+              <li>
                 <strong>{{ post.project-date }}</strong>
               </li>
               {% endif %}
               {% if post.category %}
-              <li>Service:
+              <li>
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
+              {% if post.event %}
+              <li>
+                <strong>{{ post.event }}</strong>
+              </li>
+              {% endif %}
               {% if post.link %}
-              <li>Link:
+              <li>
                 <strong><a href="{{ post.link }}">Link to video</a></strong>
               </li>
               {% endif %}
