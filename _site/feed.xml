@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2024-07-19T18:09:06-04:00</updated>
+  <updated>2024-07-19T19:51:52-04:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -122,78 +122,10 @@
     </entry>
   
     <entry>
-      <title type="html">Project 1</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 1" />
-      <published>2014-07-18T00:00:00-04:00</published>
-      <updated>2014-07-18T00:00:00-04:00</updated>
-      <id>http://localhost:4000/project-1</id>
-      <content type="html" xml:base="http://localhost:4000/"></content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name></name>
-        
-        
-      </author>
-
-      
-        <category term="Web Development" />
-      
-
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Project 2</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 2" />
-      <published>2014-07-17T00:00:00-04:00</published>
-      <updated>2014-07-17T00:00:00-04:00</updated>
-      <id>http://localhost:4000/project-2</id>
-      <content type="html" xml:base="http://localhost:4000/"></content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name></name>
-        
-        
-      </author>
-
-      
-        <category term="Web Development" />
-      
-
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Project 3</title>
-      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Project 3" />
-      <published>2014-07-16T00:00:00-04:00</published>
-      <updated>2014-07-16T00:00:00-04:00</updated>
+      <title type="html">Creating a Culture of Documentation</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Creating a Culture of Documentation" />
+      <published>2023-05-12T00:00:00-04:00</published>
+      <updated>2023-05-12T00:00:00-04:00</updated>
       <id>http://localhost:4000/project-3</id>
       <content type="html" xml:base="http://localhost:4000/"></content>
 
@@ -210,7 +142,75 @@
       </author>
 
       
-        <category term="Web Development" />
+        <category term="Conference Talk" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Kicking ass in your career while chronic illness is kicking your ass</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Kicking ass in your career while chronic illness is kicking your ass" />
+      <published>2022-09-16T00:00:00-04:00</published>
+      <updated>2022-09-16T00:00:00-04:00</updated>
+      <id>http://localhost:4000/project-1</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Conference Talk" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Documentation as a deliverable - the business case for documentation</title>
+      <link href="http://localhost:4000/" rel="alternate" type="text/html" title="Documentation as a deliverable - the business case for documentation" />
+      <published>2022-04-28T00:00:00-04:00</published>
+      <updated>2022-04-28T00:00:00-04:00</updated>
+      <id>http://localhost:4000/project-2</id>
+      <content type="html" xml:base="http://localhost:4000/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Conference Talk" />
       
 
       
