@@ -35,6 +35,11 @@
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
+              {% if post.link %}
+              <li>Link:
+                <strong><a href="{{ post.link }}">Link to video</a></strong>
+              </li>
+              {% endif %}
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
