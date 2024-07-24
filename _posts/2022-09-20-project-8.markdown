@@ -1,0 +1,15 @@
+---
+layout: default
+modal-id: 8
+date: 2022-09-20
+title: The struggle of getting an open-source community off the ground
+img: struggle.png
+alt: image-alt
+project-date: Sept 2022
+link: https://www.youtube.com/watch?v=nvLA8x1jtUk
+category: Conference Talk
+event: DrupalCon Prague 2022
+---
+Having an open-source project is great, but if no one is using it, there doesn’t seem to be much point in working on it, right? Lots of open-source projects are small and easy to integrate into your workflow, and so communities quickly form around them organically. But when you have a bigger project that requires some knowledge and buy-in, and a specific need, how do you get people enthusiastic and involved in your project?    
+
+In this talk, we’ll discuss how to start an open-source community from the ground up, and how to leverage your existing users and spaces. Attendees will come away with ideas and plans for how to take their project to the next level and get people excited and involved. 

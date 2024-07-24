@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 2
+date: 2022-04-28
+img: doc-as-deliverable.png
+alt: image-alt
+title: Documentation as a deliverable - the business case for documentation
+alt: image-alt
+project-date: April 2022
+link: https://www.youtube.com/watch?v=8SRf6n-xaw8&list=PL31TzQhFjH2LymQz2ckwr3xYXNNidZL-z&index=18
+category: Conference Talk
+event: DrupalCon Portland
+---
+It’s no secret that documentation is often ignored, overlooked, or simply incomplete when it comes to many projects. Despite how essential it is, those working on the project often aren’t given the bandwidth to complete the documentation, as it isn’t regarded as being as critical as the code. In this talk, we’ll cover why this is wrong, and how to get all of your stakeholders on board to ensure documentation is delivered along with technical deliverables. We’ll go over strategies to get everyone on the same page, as well as how to find the bandwidth on your team to get the documentation done.    

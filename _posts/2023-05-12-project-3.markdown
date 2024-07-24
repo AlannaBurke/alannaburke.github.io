@@ -1,0 +1,18 @@
+---
+layout: default
+modal-id: 3
+date: 2023-05-12
+img: creating-culture-documentation.png
+alt: image-alt
+title: Creating a Culture of Documentation
+alt: image-alt
+project-date: May 2023
+link: https://www.youtube.com/watch?v=8SRf6n-xaw8&list=PL31TzQhFjH2LymQz2ckwr3xYXNNidZL-z&index=18
+category: Conference Talk
+event: DrupalSouth
+---
+Picture this: you’ve found a new project on GitHub. It does exactly what you’re looking for, and it’s open-source. Amazing! So you roll up your sleeves and get to it. But then, you run into an error. You Google it. You find similar queries, but never the answer. You pour over the code. You search for anything documenting this project, but keep coming up empty. This project would be perfect, but no one ever documented it. 
+
+Far too often, the information we need is never found. It stays locked in the minds of the engineers who wrote the code. But what good is code that no one knows how to use? Documentation is every bit as important as making sure the project works. That buy-in can be hard. Stakeholders don’t want to pay for the time. Project managers don’t prioritize the work. Engineers don’t want to do it. The only way to solve this problem is to create a culture around documentation. 
+
+In this session, we’ll talk about how to elevate the status of the humble documentation to its rightful place alongside your code. We’ll cover how to integrate the documentation process into your existing processes so that your engineers are on board, and how to show stakeholders and others who push back that documentation is not only worthwhile, but essential to the success of your project.

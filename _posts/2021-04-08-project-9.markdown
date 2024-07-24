@@ -1,0 +1,17 @@
+---
+layout: default
+modal-id: 9
+date: 2021-04-08
+title: Public speaking in the virtual era - conquer your fears
+img: speaking.png
+alt: image-alt
+project-date: April 2021
+#link: https://www.youtube.com/watch?v=nvLA8x1jtUk
+category: Conference Talk
+event: DrupalFest 2021
+---
+What really scares you about public speaking? What’s the worst thing that could happen? No, what’s the literal worst thing that could happen? Try to think of the thing that scares you most about speaking. I’ve presented with a searing migraine. I’ve been stuck in a Lyft waiting for a freight train to pass when my talk starts in 20 minutes (we made it, wish I’d been warned about that Nashville train). Virtual events have their own troubles - I’ve had the audio cut out in my virtual talk and the event team had to boot me out of the session because they couldn’t get my attention. Oh, and once I missed my own talk because I was dealing with a personal loss and mixed up the timezones - it’s pretty difficult to miss an in-person session at a conference.    
+
+And yet - here I am, happily employed, and still having my talks accepted. Because things happen! And frankly, I’m glad they have, because now I know that whatever life throws at me when it comes to speaking, I can handle it, whether I’m speaking in person or virtually. And so can you. With so many virtual events right now, the barrier to presenting is much lower - and I want to make sure you break down your personal barriers, as well.    
+
+In this talk, we’ll cover topics around presenting in general and the specifics of giving virtual talks.    
