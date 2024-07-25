@@ -44,7 +44,9 @@ h6 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary, 
+hr.star-purple,
+hr.star-orange {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -55,7 +57,9 @@ hr.star-primary {
 }
 
 hr.star-light:after,
-hr.star-primary:after {
+hr.star-primary:after,
+hr.star-purple:after,
+hr.star-orange:after {
     content: "\f005";
     display: inline-block;
     position: relative;
@@ -81,6 +85,16 @@ hr.star-primary {
 hr.star-primary:after {
     color: #2c3e50;
     background-color: #fff;
+}
+
+hr.star-purple:after {
+    color: #fff;
+    background-color: #959EFF;
+}
+
+hr.star-orange:after {
+    color: #fff;
+    background-color: #F88A4C;
 }
 
 .img-centered {
@@ -190,6 +204,16 @@ section h2 {
 section.success {
     color: #fff;
     background: #18bc9c;
+}
+
+section.talks {
+    color: #fff;
+    background: #959EFF;
+}
+
+section.pubs {
+    color: #fff;
+    background: #F88A4C;
 }
 
 @media(max-width:767px) {
@@ -489,3 +513,14 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .talks {
+    background-color: #959EFF;
+  }
