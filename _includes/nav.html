@@ -32,6 +32,16 @@
         </li>
       </ul>
     </div>
+    <div class="footer-col col-md-4">
+      <ul class="list-inline">
+        {% for network in site.social %}
+        <li>
+          <a href="{{ network.url }}" class="btn-social btn-outline"><i
+              class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
     <!-- /.navbar-collapse -->
   </div>
   <!-- /.container-fluid -->
