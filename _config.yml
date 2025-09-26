@@ -2,10 +2,10 @@
 title: Alanna Burke
 email: aburke626@gmail.com
 url: alannaburke.github.io
-description: "Seeking full-time remote job as a community manager, documentation writer, developer advocate, or technical writer. "
-keywords: "looking for work, job seeker, community manager, documentation, technical writer, developer advocate"
-skills: "Community Manager - Documentation Writer - Developer Advocate"
-meta_author: Burke Alanna
+description: "Information Solutions Engineer supporting open source AI documentation at Meta. Board member of a small animal rescue."
+keywords: "Information Solutions Engineer supporting open source AI documentation at Meta."
+skills: "Information Solutions Engineer supporting open source AI documentation at Meta."
+meta_author: Alanna Burke
 
 # Google webmaster tools
 google_verify:
@@ -41,8 +41,8 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/aburke626
+  - title: bluesky
+    url: https://bsky.app/profile/alannaburke.bsky.social
   - title: linkedin
     url: https://www.linkedin.com/in/alannaburke/
   - title: github
